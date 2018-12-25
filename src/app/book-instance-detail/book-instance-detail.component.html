@@ -1,0 +1,7 @@
+<div *ngIf="bookInstanceDetail.bookInstance">
+  <h1><strong>ID</strong> : {{ bookInstanceDetail.bookInstance.id }}</h1>
+  <p><strong>Imprint:</strong> {{ bookInstanceDetail.bookInstance.imprint }} </p>
+  <p><strong>Title:</strong> {{ bookInstanceDetail.bookInstance.book.title }} </p>
+  <p><strong>Status:</strong> {{ bookInstanceDetail.bookInstance.status }} </p>
+  <p><strong>Due Bacj:</strong> {{ bookInstanceDetail.bookInstance.due_back_formatted }} </p>
+</div>

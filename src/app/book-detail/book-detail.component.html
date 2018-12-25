@@ -1,0 +1,17 @@
+<div *ngIf="result">
+  <h1>{{ result.book.title }}</h1>
+  <p><strong>Author:</strong> {{ result.book.author.name }} </p>
+  <p><strong>Summary:</strong> {{ result.book.summary }} </p>
+  <p><strong>ISBN:</strong> {{ result.book.isbn }} </p>
+
+  <br><hr>
+  <h1>Copies</h1>
+  <hr>
+  <span *ngFor="let copy of result.bookInstance;let i = index">
+  <p><strong>COPY {{ i+1 }}:</strong>
+    <p><strong>Status:</strong> {{ copy.status }} </p>
+    <p><strong>Imprint:</strong> {{ copy.imprint }} </p>
+    <p><strong>Due Back:</strong> {{ copy.due_back_formatted}} </p>
+
+  </span>
+  </div>

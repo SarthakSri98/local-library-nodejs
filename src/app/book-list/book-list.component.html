@@ -1,0 +1,5 @@
+<p *ngFor="let book of bookList">
+  <a [routerLink]="['/book',book.id]" routerLinkActive="router-link-active"  >{{ book.title }}</a> | {{ book.author.first_name }}&nbsp;{{ book.author.family_name }}
+</p>
+
+<p *ngIf="!bookList">No books available</p>

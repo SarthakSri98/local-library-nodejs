@@ -1,0 +1,5 @@
+<span *ngFor="let author of authorList">
+  <a [routerLink]="['/author',author.id]">{{ author.name }}</a> | {{ author.date_of_birth | date }}&nbsp;, {{ author.date_of_death | date }}<br>
+</span>
+
+<p *ngIf="!authorList">No Authors available</p>

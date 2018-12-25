@@ -1,0 +1,5 @@
+<ul *ngFor="let genre of genreList">
+  <li [routerLink]="['/genre',genre.id]" routerLinkActive="router-link-active" >{{ genre.name }}</li><br>
+</ul>
+
+<p *ngIf="!genreList">No genres available</p>

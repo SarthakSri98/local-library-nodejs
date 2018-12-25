@@ -1,0 +1,5 @@
+<span *ngFor="let bookInstance of bookAvailibility">
+  <a [routerLink]="['/bookInstance',bookInstance.id]">{{ bookInstance.book.title }}</a> | {{ bookInstance.imprint }}&nbsp;{{ bookInstance.status }}&nbsp; {{ bookInstance.due_back_formatted }}<br>
+</span>
+
+<p *ngIf="!bookAvailibility">No book instances available</p>

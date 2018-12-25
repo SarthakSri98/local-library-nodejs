@@ -1,0 +1,9 @@
+<h1>Local Library Home</h1>
+<h2>Dynamic Content</h2>
+<ul>
+    <li *ngIf="result">Books : {{ result.data.book_count }}</li>
+      <li *ngIf="result">Copies :  {{ result.data.book_instance_count}}</li>
+      <li *ngIf="result">Copies Available : {{ result.data.book_instance_available_count}}</li> 
+      <li *ngIf="result">Authors : {{ result.data.author_count}}</li>
+      <li *ngIf="result">Genres : {{ result.data.genre_count}}</li>
+</ul>

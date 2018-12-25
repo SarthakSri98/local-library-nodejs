@@ -1,0 +1,6 @@
+<div *ngIf="result">
+<h1>Genre : {{ result.genre.name }}</h1>
+<span *ngFor="let book of result.bookList;let i = index">
+<h3 >Books {{ i+1 }}: {{ book.title }}</h3><h5>{{ book.summary }} </h5>
+</span>
+</div>

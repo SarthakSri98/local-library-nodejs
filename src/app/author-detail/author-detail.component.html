@@ -1,0 +1,7 @@
+<div *ngIf="authorDetail">
+  <h1>Author : {{ authorDetail.author.name }}</h1>
+<p>{{ authorDetail.author.lifespan }}</p>
+  <span *ngFor="let book of authorDetail.books;let i = index">
+  <h3 >Books {{ i+1 }}: {{ book.title }}</h3><h5>{{ book.summary }} </h5>
+  </span>
+  </div>
