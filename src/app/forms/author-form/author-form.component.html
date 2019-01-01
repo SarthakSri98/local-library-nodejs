@@ -1,0 +1,13 @@
+<h1> {{title}}</h1>
+
+<form method='POST' action='' [formGroup]="authorForm" (ngSubmit)="addAuthorValue()">
+  <div class="form-group">
+    <label for='name'> Genre:</label><br>
+   <input class="form-control" type='text' placeholder='First name' name='first_name'  formControlName="first_name">
+   <input class="form-control" type='text' placeholder='Last name' name='last_name'  formControlName="last_name">
+   <input class="form-control" type='date' placeholder='Date of birth' name='date_of_birth'  formControlName="date_of_birth">
+   <input class="form-control" type='date' placeholder='Date of death' name='date_of_death'  formControlName="date_of_death">
+
+  <button class="btn btn-primary" type='submit'>Submit</button>
+</div>
+</form>

@@ -14,6 +14,7 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
 import { AuthorDetailComponent } from './author-detail/author-detail.component';
 import { BookInstanceDetailComponent } from './book-instance-detail/book-instance-detail.component';
 import { GenreFormComponent } from './forms/genre-form/genre-form.component';
+import { AuthorFormComponent } from './forms/author-form/author-form.component';
 const routes : Routes =[
   { path:'' , component: HomeComponent },
   { path:'booklist' , component: BookListComponent },
@@ -26,6 +27,7 @@ const routes : Routes =[
   { path:'bookInstance/:id',component:BookInstanceDetailComponent},
   { path:'genreEditForm',component: GenreFormComponent },
   { path:'genreAddForm',component: GenreFormComponent },
+  { path:'authorAddForm',component: AuthorFormComponent },
 
 ]
 
@@ -42,7 +44,8 @@ const routes : Routes =[
     BookDetailComponent,
     AuthorDetailComponent,
     BookInstanceDetailComponent,
-    GenreFormComponent
+    GenreFormComponent,
+    AuthorFormComponent
   ],
   imports: [
     BrowserModule, HttpClientModule, RouterModule.forRoot(routes), FormsModule, ReactiveFormsModule

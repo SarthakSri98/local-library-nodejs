@@ -66,6 +66,11 @@ export class BaseService {
     return this.http.post('http://localhost:8000/catalog/genre/create',value);
   }
 
+  addAuthor(value)
+  {
+    console.log(value);
+    return this.http.post('http://localhost:8000/catalog/author/create',value);
+  }
 
 
 }
