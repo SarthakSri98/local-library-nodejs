@@ -1,9 +1,9 @@
 <h1> {{title}}</h1>
 
-<form method='POST' action=''>
+<form method='POST' action='' [formGroup]="genreForm" (ngSubmit)="addGenreValue()">
   <div class="form-group">
     <label for='name'> Genre:</label><br>
-   <input #name class="form-control" type='text' placeholder='Fantasy, Poetry etc.' name='name' [value]="undefined===genre ? '' : genre.name">
-  <button class="btn btn-primary" type='submit' (click)="addGenreValue()">Submit</button>
+   <input #name class="form-control" type='text' placeholder='Fantasy, Poetry etc.' name='name'  formControlName="name">
+  <button class="btn btn-primary" type='submit'>Submit</button>
 </div>
 </form>

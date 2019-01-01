@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
-import { FormsModule  } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router'
 import { AppComponent } from './app.component';
@@ -45,7 +45,7 @@ const routes : Routes =[
     GenreFormComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule, RouterModule.forRoot(routes), FormsModule
+    BrowserModule, HttpClientModule, RouterModule.forRoot(routes), FormsModule, ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

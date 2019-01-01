@@ -63,7 +63,7 @@ export class BaseService {
   addGenre(value)
   {
     console.log(value);
-    return this.http.post('http://localhost:8000/genre/create',value);
+    return this.http.post('http://localhost:8000/catalog/genre/create',value);
   }
 
 
